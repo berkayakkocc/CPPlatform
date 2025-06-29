@@ -1,16 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CPPlatform.Business\CPPlatform.Business.csproj" />
-    <ProjectReference Include="..\CPPlatform.Core\CPPlatform.Core.csproj" />
-    <ProjectReference Include="..\CPPlatform.DataAccess\CPPlatform.DataAccess.csproj" />
-    <ProjectReference Include="..\CPPlatform.Entities\CPPlatform.Entities.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CPPlatform.DataAccess\CPPlatform.DataAccess.csproj" />
+		<ProjectReference Include="..\CPPlatform.Entities\CPPlatform.Entities.csproj" />
+		<ProjectReference Include="..\CPPlatform.Core\CPPlatform.Core.csproj" />
+		<ProjectReference Include="..\CPPlatform.Business\CPPlatform.Business.csproj" />
+	</ItemGroup>
 
 </Project>
