@@ -6,4 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CPPlatform.Business\CPPlatform.Business.csproj" />
+    <ProjectReference Include="..\CPPlatform.Core\CPPlatform.Core.csproj" />
+    <ProjectReference Include="..\CPPlatform.DataAccess\CPPlatform.DataAccess.csproj" />
+    <ProjectReference Include="..\CPPlatform.Entities\CPPlatform.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
